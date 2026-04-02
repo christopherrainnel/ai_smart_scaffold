@@ -1,0 +1,9 @@
+artifacts/staging/
+artifacts/tmp/
+*.log
+Thumbs.db
+.DS_Store
+*.vsix
+*.msi
+*.exe
+*.zip
