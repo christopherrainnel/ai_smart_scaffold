@@ -1,6 +1,6 @@
 # Support
 
-> Launch note: The VS Code extension is the first shipped surface. Early users who begin on or before **June 30, 2026** receive **Tier1** mode for the first **20 days** instead of starting in **Free** mode.
+> Launch note: The VS Code extension is the first shipped surface. Early users who begin on or before **June 30, 2026** receive **Tier1** mode for up to **20 days** instead of starting in **Free** mode, with all bundled introductory access ending no later than **June 30, 2026**.
 
 For product questions, installation issues, or support requests:
 

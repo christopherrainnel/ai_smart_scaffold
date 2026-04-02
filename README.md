@@ -10,7 +10,7 @@ AI Smart Scaffold is a local-first governed runtime for AI-assisted software dev
 
 Version `0.1.0` is the first public release line.
 
-For early users who begin on or before **June 30, 2026**, the product starts in bundled **Tier1** mode for the first **20 days** on that machine in the same workspace instead of starting in **Free** mode. After that introductory Tier1 window ends, the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+For early users who begin on or before **June 30, 2026**, the product starts in bundled **Tier1** mode for up to **20 days** on that machine in the same workspace instead of starting in **Free** mode, with all bundled introductory access ending no later than **June 30, 2026**. After that introductory Tier1 window ends, the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
 
 ---
 

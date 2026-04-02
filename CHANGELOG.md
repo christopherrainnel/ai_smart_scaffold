@@ -10,5 +10,5 @@ The format follows Keep a Changelog and Semantic Versioning.
 
 - First public release line for AI Smart Scaffold
 - VS Code extension ships first in the public release rollout, with Workbench and broader runtime surfaces following after the VS Code release
-- Early users who begin on or before June 30, 2026 start in Tier1 mode for 20 days before returning to the Free baseline unless a separate paid Tier1 entitlement is active
+- Early users who begin on or before June 30, 2026 start in Tier1 mode for up to 20 days, with all bundled introductory access ending no later than June 30, 2026, before returning to the Free baseline unless a separate paid Tier1 entitlement is active
 - Public installation, support, legal, and release documentation

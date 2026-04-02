@@ -1,6 +1,6 @@
 # Contributing to AI Smart Scaffold
 
-> Public launch note: The VS Code extension ships first. Early users who begin on or before **June 30, 2026** start in **Tier1** mode for **20 days** before the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+> Public launch note: The VS Code extension ships first. Early users who begin on or before **June 30, 2026** start in **Tier1** mode for up to **20 days**, with all bundled introductory access ending no later than **June 30, 2026**, before the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
 
 Thank you for your interest! **Please note: This is a public release-facing repository.**
 
