@@ -47,7 +47,7 @@ You may not, and may not permit others to:
 
 The Free Tier of the Software is made available at no charge. HSNV reserves the right to change, limit, or discontinue the Free Tier at any time with reasonable notice.
 
-HSNV may also offer a time-limited introductory Tier1 promotional window with certain Free builds. Where offered, that window activates in the same workspace after installation, is tied to the installation machine and activation context, expires automatically, and returns the product to the Free baseline unless a separate paid Tier1 entitlement is active. The introductory window does not create an ongoing paid subscription.
+HSNV may also offer a time-limited introductory Tier1 promotional window with certain Free builds. Where offered, that window activates in the same workspace after installation, is tied to the installation machine and activation context, lasts for up to 20 days, ends no later than June 30, 2026, expires automatically, and returns the product to the Free baseline unless a separate paid Tier1 entitlement is active. The introductory window does not create an ongoing paid subscription.
 
 ### 4.2 Paid Tiers
 

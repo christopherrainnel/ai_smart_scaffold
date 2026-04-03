@@ -2,7 +2,9 @@
 
 AI Smart Scaffold is opinionated by design. You need to keep the folder structure and workflow in place while your project is active. That constraint is intentional because it helps the AI remain consistent across sessions. The common folders most projects need are already included, so you are not starting from zero.
 
-Version `0.1.0` applies the **Free** baseline first. On an eligible first installation, the product then upgrades the same workspace to **Tier1** automatically after a short local entitlement check. That bundled Tier1 window lasts **20 days**, after which the workspace returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+Version `0.1.0` keeps the same workspace on the **Free** baseline until the initial entitlement sync completes. On an eligible first installation, that same workspace then enters **Tier1** immediately and can remain there for up to **20 days**, with all bundled introductory access ending no later than **June 30, 2026**. After that introductory window ends, the workspace returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+
+Runtime protection stays machine-aware while this happens. AI Smart Scaffold works from a 3-session active baseline and can temporarily lift the soft ceiling to 4 when the machine has healthy headroom. Separate context budgets help prevent prompt flooding and overloaded long sessions; they are runtime safety controls, not a paid usage meter.
 
 ## Recommended First Steps
 
