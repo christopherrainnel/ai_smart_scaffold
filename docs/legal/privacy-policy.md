@@ -11,7 +11,7 @@
 
 ## 1. Who We Are
 
-H&S Nexus Ventures ("HSNV", "we", "us", "our") develops and distributes AI Smart Scaffold, a governed runtime for AI-assisted software development, distributed as a VS Code extension and Python CLI.
+H&S Nexus Ventures ("HSNV", "we", "us", "our") develops and distributes AI Smart Scaffold, a governed runtime for AI-assisted software development, released first as a VS Code extension with associated local runtime components while connected product surfaces roll out in stages.
 
 Contact: inquiry@hsnexus.com
 
@@ -23,11 +23,14 @@ This Privacy Policy applies to:
 
 - The AI Smart Scaffold VS Code extension ("Extension")
 - The AI Smart Scaffold CLI (`python -m gov`, "Runtime")
+- Any connected local AI Smart Scaffold product surfaces made available in this release line, including the Workbench desktop application where provided
 - Any optional HSNV-operated services you explicitly connect to through the Software, if and when such services are offered (for example, commercial licensing or entitlement APIs)
 
 This Policy does **not** apply to your own project workspace files. Those remain on your machine and are not part of our normal data collection.
 
 AI Smart Scaffold is designed to operate locally on the machine where you install it. It is not a continuously connected service. Outside optional hosted services, updates, or support submissions that you choose to send, your repository-specific work remains local to you.
+
+To keep connected product surfaces aligned as the release expands, the Software may store machine-local runtime state such as notification history, alert resolutions, timestamps, entitlement status, and workspace health markers on your device. That local state remains on your machine unless you deliberately include it in a diagnostic bundle or use an optional hosted HSNV service.
 
 ---
 

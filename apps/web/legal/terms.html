@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Terms of Service — AI Smart Scaffold | H&S Nexus Ventures</title>
+    <meta name="description" content="Terms of Service for AI Smart Scaffold by H&S Nexus Ventures. License grant, subscription terms, and usage conditions for governed AI development.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hsnexus.com/legal/terms">
+    <meta property="og:title" content="Terms of Service — AI Smart Scaffold">
+    <meta property="og:description" content="Usage terms and license conditions for AI Smart Scaffold governed AI development tool.">
+    <meta property="og:site_name" content="H&S Nexus Ventures">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-card: #111827;
+            --accent-green: #22c55e;
+            --accent-gradient: linear-gradient(135deg, #22c55e, #06b6d4);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse, rgba(34, 197, 94, 0.08), transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page-container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 24px;
+        }
+
+        .page-header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #f1f5f9, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .meta-info {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .legal-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .legal-section:hover {
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .legal-section h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 16px;
+        }
+
+        .legal-section p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .legal-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-section ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .legal-section li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .legal-section strong {
+            color: var(--text-primary);
+        }
+
+        .highlight-box {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.15);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .caps-section {
+            text-transform: none;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .legal-footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .legal-footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .legal-footer a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        .legal-footer a:hover { text-decoration: underline; }
+
+        a { color: var(--accent-green); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-in {
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+        .delay-1 { animation-delay: 0.05s; }
+        .delay-2 { animation-delay: 0.1s; }
+        .delay-3 { animation-delay: 0.15s; }
+        .delay-4 { animation-delay: 0.2s; }
+        .delay-5 { animation-delay: 0.25s; }
+        .delay-6 { animation-delay: 0.3s; }
+        .delay-7 { animation-delay: 0.35s; }
+        .delay-8 { animation-delay: 0.4s; }
+        .delay-9 { animation-delay: 0.45s; }
+        .delay-10 { animation-delay: 0.5s; }
+        .delay-11 { animation-delay: 0.55s; }
+        .delay-12 { animation-delay: 0.6s; }
+        .delay-13 { animation-delay: 0.65s; }
+        .delay-14 { animation-delay: 0.7s; }
+        .delay-15 { animation-delay: 0.75s; }
+
+        @media (max-width: 640px) {
+            .legal-section { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <div class="page-container">
+
+        <header class="page-header animate-in">
+            <div class="badge">Legal</div>
+            <h1>Terms of Service</h1>
+            <p>License grant, subscription terms, and usage conditions for AI Smart Scaffold.</p>
+            <div class="meta-info">Version 1.0 · Last updated April 1, 2026 · H&S Nexus Ventures</div>
+        </header>
+
+        <div class="legal-section animate-in delay-1">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, activating, or using AI Smart Scaffold, the VS Code extension, any associated CLI tooling, or other connected local product surfaces made available in this release line ("the Software"), you ("User") agree to these Terms of Service ("Terms"). If you are accepting on behalf of a company or organization, you represent that you have authority to bind that entity.</p>
+            <p>If you do not agree to these Terms, do not install or use the Software.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-2">
+            <h2>2. License Grant</h2>
+            <p>Subject to these Terms and any applicable commercial terms, H&S Nexus Ventures ("HSNV") grants you a limited, non-exclusive, non-transferable, non-sublicensable license to:</p>
+            <ul>
+                <li>Install and use the Software on your own devices or in your own development environments.</li>
+                <li>Use the Software solely for your internal software development and AI governance workflow purposes.</li>
+            </ul>
+            <p>This license is conditional on your continued compliance with these Terms.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-3">
+            <h2>3. License Restrictions</h2>
+            <p>You may not, and may not permit others to:</p>
+            <ul>
+                <li>Copy, modify, merge, sublicense, distribute, or sell the Software</li>
+                <li>Reverse engineer, disassemble, decompile, or extract source code of encrypted or compiled portions</li>
+                <li>Remove or alter any copyright, trademark, or proprietary notice</li>
+                <li>Use the Software to build a competing product or service</li>
+                <li>Rent, lease, or lend the Software to third parties</li>
+                <li>Use the Software in violation of any applicable law</li>
+            </ul>
+        </div>
+
+        <div class="legal-section animate-in delay-4">
+            <h2>4. Tiers and Subscriptions</h2>
+            <p><strong>Free Tier</strong> — Available at no charge. HSNV reserves the right to change, limit, or discontinue the Free Tier at any time with reasonable notice.</p>
+            <p><strong>Bundled Trial Window</strong> — HSNV may offer a time-limited introductory Tier1 trial with Free builds. Where offered, the trial activates on first install, is tied to machine and account markers (whichever fires first), lasts up to 20 days, ends no later than June 30, 2026, and automatically returns the product to the Free baseline unless a paid Tier1 entitlement is active. The trial does not create an ongoing paid subscription.</p>
+            <p><strong>Paid Tiers (Tier 1 and Enterprise)</strong> — Require a valid, active subscription purchased through HSNV's authorized channels. Billing cycles, refunds, grace periods, and downgrade behavior are governed by the applicable subscription terms at the time of purchase.</p>
+            <p><strong>Tier Activation and Reversion</strong> — Paid-tier activation may materialize or refresh HSNV-managed Tier1 files or managed sections inside your existing workspace. Downgrade, expiry, cancellation, or entitlement loss may disable paid-tier functionality and remove, lock, or revert only those HSNV-managed Tier1 assets to the Free baseline while preserving your own project content.</p>
+            <p><strong>License Keys</strong> — Paid tiers may use cryptographically signed license keys tied to machine fingerprint. You must not share, transfer, or redistribute license keys.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-5">
+            <h2>5. Intellectual Property</h2>
+            <p>The Software, including all scaffold instruction content, governance logic, templates, rule sets, configuration schemas, and encryption infrastructure, is the exclusive intellectual property of HSNV and its licensors.</p>
+            <p>No title or ownership of the Software is transferred to you. All rights not expressly granted are reserved.</p>
+            <p>Copyright © 2026 H&S Nexus Ventures. All Rights Reserved.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-6">
+            <h2>6. User Content and Workspace Data</h2>
+            <div class="highlight-box">
+                <p>The Software operates locally on your machine. HSNV does not collect, access, or store your workspace files or source code unless you explicitly connect to an optional HSNV-operated service.</p>
+            </div>
+            <p>You retain all ownership of your project files. HSNV makes no claim to any content of your project repositories.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-7">
+            <h2>7. Telemetry and Usage Data</h2>
+            <p>The current runtime operates locally and does not require telemetry. If optional anonymized telemetry is introduced, it will be governed by then-current product notices and settings. No source code or file contents may be collected except where explicitly disclosed and agreed.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-8">
+            <h2>8. Privacy</h2>
+            <p>Your use of the Software is subject to HSNV's <a href="/legal/privacy">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-9">
+            <h2>9. Disclaimer of Warranties</h2>
+            <p class="caps-section">THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, HSNV EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-10">
+            <h2>10. Limitation of Liability</h2>
+            <p class="caps-section">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, HSNV SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR LOSS OF PROFITS, DATA, GOODWILL, OR BUSINESS OPPORTUNITY. HSNV'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY YOU FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) USD 100.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-11">
+            <h2>11. Termination</h2>
+            <p>HSNV may suspend or terminate your license if you breach these Terms. Upon termination, your right to use the Software ceases immediately and paid tier license keys may be deactivated.</p>
+            <p>When a paid-tier entitlement ends, HSNV-managed paid-tier assets or managed sections may be disabled, removed, or reverted to the Free baseline in the same workspace.</p>
+            <p>You may terminate your subscription at any time through your account settings or by contacting HSNV support.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-12">
+            <h2>12. Updates and Modifications</h2>
+            <p>HSNV may update the Software and these Terms at any time. For material changes, HSNV provides at least 14 days' notice via in-product notification or email. Continued use constitutes acceptance of updated Terms.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-13">
+            <h2>13. Export Controls</h2>
+            <p>The Software may be subject to export control laws. You agree to comply with all applicable export laws and represent that you are not located in any embargoed or sanctioned country.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-14">
+            <h2>14. Governing Law</h2>
+            <p>These Terms are governed by the laws of the Republic of the Philippines. Disputes shall first be submitted to good-faith negotiation. If unresolved within 30 days, disputes shall be referred to the proper courts of the Philippines with subject-matter jurisdiction, unless HSNV agrees to alternative dispute resolution.</p>
+            <p>For users subject to laws requiring local governing law, those mandatory provisions remain in effect alongside these Terms.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-15">
+            <h2>15. Severability</h2>
+            <p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions continue in full force. The invalid provision will be modified to the minimum extent necessary to make it enforceable.</p>
+        </div>
+
+        <div class="legal-section animate-in delay-15">
+            <h2>16. Entire Agreement</h2>
+            <p>These Terms, together with the <a href="/legal/privacy">Privacy Policy</a> and any applicable subscription agreement, constitute the entire agreement between you and HSNV regarding the Software and supersede all prior agreements or understandings.</p>
+        </div>
+
+        <footer class="legal-footer">
+            <p>© 2026 H&S Nexus Ventures. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="/legal/privacy">Privacy Policy</a> ·
+                <a href="/pricing">Pricing</a> ·
+                <a href="mailto:inquiry@hsnexus.com">Contact</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

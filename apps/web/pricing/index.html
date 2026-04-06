@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Pricing — AI Smart Scaffold | H&S Nexus Ventures</title>
+    <meta name="description" content="AI Smart Scaffold helps vibe coders reduce AI drift by orchestrating work across VS Code, Workbench, and the repo. Eligible first installs start in Tier1 for up to 20 days, then return to Free unless paid Tier1 remains active.">
+    <meta name="keywords" content="AI Smart Scaffold, pricing, subscription, governed AI development, vibe coding">
+    <meta name="author" content="Health & Smart Nexus Ventures">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hsnexus.com/pricing">
+    <meta property="og:title" content="AI Smart Scaffold Pricing">
+    <meta property="og:description" content="Reduce AI drift, keep repo changes visible, and get guided help finishing the project. AI Smart Scaffold stays between you, your tools, and your repo while Tier1 adds deeper guidance.">
+    <meta property="og:site_name" content="Health & Smart Nexus">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-card: #111827;
+            --bg-card-hover: #1a2332;
+            --bg-tier1: linear-gradient(135deg, #0d2137 0%, #0a1628 50%, #132744 100%);
+            --accent-green: #22c55e;
+            --accent-blue: #3b82f6;
+            --accent-gradient: linear-gradient(135deg, #22c55e, #06b6d4);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #1e293b;
+            --border-accent: #22c55e;
+            --shadow-glow: 0 0 60px rgba(34, 197, 94, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- Background Animation --- */
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse, rgba(34, 197, 94, 0.08), transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* --- Layout --- */
+        .page-container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* --- Header --- */
+        .page-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 24px;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #f1f5f9, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header h1 span {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* --- Pricing Grid --- */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto 80px;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+
+        /* --- Card Base --- */
+        .pricing-card {
+            position: relative;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--text-muted);
+        }
+
+        /* --- Tier1 Card Highlight --- */
+        .pricing-card.tier1 {
+            background: var(--bg-tier1);
+            border-color: var(--border-accent);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .pricing-card.tier1:hover {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 80px rgba(34, 197, 94, 0.2);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -14px;
+            right: 24px;
+            padding: 6px 18px;
+            background: var(--accent-gradient);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* --- Card Content --- */
+        .tier-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .tier1 .tier-name { color: var(--accent-green); }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .price-currency {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .price-period {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .tier-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin-bottom: 24px;
+        }
+
+        .tier1 .divider {
+            background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+            opacity: 0.3;
+        }
+
+        /* --- Feature List --- */
+        .feature-list {
+            list-style: none;
+            margin-bottom: 36px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .feature-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .feature-icon.check {
+            color: var(--accent-green);
+        }
+
+        .feature-icon.cross {
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        .feature-list li.disabled {
+            opacity: 0.4;
+        }
+
+        /* --- CTA Buttons --- */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-free {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .cta-free:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-secondary);
+        }
+
+        .cta-tier1 {
+            background: var(--accent-gradient);
+            color: #000;
+            box-shadow: 0 4px 24px rgba(34, 197, 94, 0.3);
+        }
+
+        .cta-tier1:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 32px rgba(34, 197, 94, 0.4);
+        }
+
+        /* --- FAQ --- */
+        .faq-section {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding-top: 12px;
+        }
+
+        /* --- Auth Modal --- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 440px;
+            width: 90%;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .modal p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--text-secondary);
+        }
+
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .divider-with-text {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 20px 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .divider-with-text::before,
+        .divider-with-text::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--accent-green);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: var(--accent-gradient);
+            color: #000;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 8px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
+        }
+
+        /* --- Footer --- */
+        .pricing-footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .pricing-footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .pricing-footer a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        .pricing-footer a:hover { text-decoration: underline; }
+
+        /* --- Animations --- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <div class="page-container">
+
+        <!-- Header -->
+        <header class="page-header animate-in">
+            <div class="badge">0.1.0 Pricing</div>
+            <h1>When AI <span>starts to drift,</span><br>stay in control.</h1>
+            <p>AI Smart Scaffold acts like the runtime orchestrator for your project, keeping Workbench, VS Code, and your repo pointed at the same work. Eligible first installations start in bundled Tier1 for up to 20 days in the same workspace, with all bundled introductory access ending no later than June 30, 2026, unless a paid Tier1 entitlement is active.</p>
+        </header>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+
+            <!-- Free Tier -->
+            <div class="pricing-card animate-in delay-1" id="card-free">
+                <div class="tier-name">Free</div>
+                <div class="price">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">0</span>
+                </div>
+                <p class="tier-description">Stay in one workspace while the runtime reduces drift, keeps important repo changes visible, and leaves you with a reviewable trail instead of scattered AI guesses.</p>
+                <div class="divider"></div>
+                <ul class="feature-list">
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Free baseline in the same workspace
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Bundled 20-day Tier1 on eligible first installation
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Bounded Free-tier preview: 5 premium prompts / 24h, 8 premium entitlement events / 24h (first cap hit returns to Free preview behavior)
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Main status surfaces show entitlement state (`free`, `free-preview`, `tier1`, `tier1-expired`)
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Common scaffold folder structure
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        CLI runtime (<code>python -m gov</code>)
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        VS Code sidebar extension
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Workbench desktop app
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Shared notification center across Workbench and VS Code
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Repo change alerts for important created, moved, or deleted files outside the active session
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Your project markdowns stay editable in the same workspace
+                    </li>
+                    <li class="disabled">
+                        <span class="feature-icon cross">✕</span>
+                        Full planning methodology
+                    </li>
+                    <li class="disabled">
+                        <span class="feature-icon cross">✕</span>
+                        Extended governance rules
+                    </li>
+                    <li class="disabled">
+                        <span class="feature-icon cross">✕</span>
+                        Priority scaffold guidance
+                    </li>
+                </ul>
+                <a href="/claim" class="cta-button cta-free" id="cta-free">Start Free + 20-Day Tier1</a>
+            </div>
+
+            <!-- Tier1 -->
+            <div class="pricing-card tier1 animate-in delay-2" id="card-tier1">
+                <div class="popular-badge">Continue After Intro</div>
+                <div class="tier-name">Tier 1</div>
+                <div class="price">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">9</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <p class="tier-description">For vibe coders who want stronger momentum after the intro window: Tier1 adds deeper guidance, clearer next steps, and stronger review support when the project starts to sprawl.</p>
+                <div class="divider"></div>
+                <ul class="feature-list">
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        <strong>Everything in Free, plus:</strong>
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Full planning methodology & gates
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Extended governance rules & triggers
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Guided experience designed to help you finish the project
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Bootstrap discovery & guided onboarding
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Encrypted delivery with managed Tier1 overlay activation
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Priority scaffold guidance
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Ongoing paid Tier1 after the introductory window
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Machine-bound entitlement security
+                    </li>
+                    <li>
+                        <span class="feature-icon check">✓</span>
+                        Premium-mode downgrade is safe: session-safe machine controls remain active if paid entitlement lapses
+                    </li>
+                </ul>
+                <button class="cta-button cta-tier1" id="cta-tier1" onclick="openAuthModal()">Subscribe to Tier1</button>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <section class="faq-section animate-in delay-3">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">What happens on first installation?</button>
+                <div class="faq-answer">AI Smart Scaffold starts eligible first installations directly in Tier1 in the same workspace for up to 20 days on that machine, but all bundled introductory access ends no later than June 30, 2026.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">What happens after the 20-day Tier1 window ends?</button>
+                <div class="faq-answer">The same workspace returns to the Free baseline unless a separate paid Tier1 entitlement is active. Your own project files stay in place, and only HSNV-managed Tier1 assets or managed sections may be reconciled back to the Free baseline.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">What happens after I subscribe?</button>
+                <div class="faq-answer">After payment, your paid Tier1 entitlement keeps the same workspace on Tier1 beyond the introductory window. The runtime applies or refreshes HSNV-managed Tier1 assets in place without requiring a separate working folder.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">How does session capacity work?</button>
+                <div class="faq-answer">AI Smart Scaffold keeps runtime concurrency machine-safe. The current runtime uses a 3-session active baseline and can temporarily lift the soft ceiling to 4 when the machine has healthy headroom. Tier1 adds deeper guidance and workflow value, but does not disable these protections.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">How are Free vs Tier1 features enforced?</button>
+                <div class="faq-answer">Free mode is the default baseline with a bounded anti-drift preview: 5 premium prompts and 8 premium entitlement events per rolling 24-hour window. Optional fallback checks (for unsupported duration telemetry) can also apply, and on first cap hit the runtime drops advanced behavior to Free-preview settings while keeping the same workspace and machine safety protections.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">What if files change outside the active chat session?</button>
+                <div class="faq-answer">AI Smart Scaffold raises a repo-scoped notice instead of blaming the current chat for changes it did not make. That helps you catch important created, moved, or deleted files without turning every repo change into the wrong closeout debt.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Can I still update my markdown docs?</button>
+                <div class="faq-answer">Yes. Your project-authored markdowns stay yours to edit in the same workspace. The runtime guides, warns, and surfaces follow-up when managed areas need attention, but it does not force you into a second folder just to keep writing docs.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">What is the context budget?</button>
+                <div class="faq-answer">The context budget is a runtime safety boundary that helps prevent prompt flooding, overloaded long sessions, and oversized governance payloads. It exists to keep the workflow stable and reviewable, not to reduce your paid access.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Does it work offline?</button>
+                <div class="faq-answer">Yes. The runtime is designed to work locally on the installed machine after setup. Optional hosted sign-in, payment, or entitlement services only apply when you choose to use ongoing paid Tier1.</div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Which IDEs are supported?</button>
+                <div class="faq-answer">VS Code (full automatic interception), plus Cursor, Windsurf, GitHub Copilot, Cline, Roo Code, and Aider via rule-based or MCP broker integration. The Workbench desktop app works with any IDE.</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pricing-footer animate-in delay-4">
+            <p>© 2026 H&S Nexus Ventures. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="/legal/terms">Terms</a> · <a href="/legal/privacy">Privacy</a> · <a href="/">Back to Home</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+            <h2>Create your account</h2>
+            <p>Sign in to subscribe to Tier1 and activate advanced governance.</p>
+
+            <div class="social-buttons">
+                <button class="social-btn" onclick="socialLogin('google')" id="btn-google">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                    Continue with Google
+                </button>
+                <button class="social-btn" onclick="socialLogin('github')" id="btn-github">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.114 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    Continue with GitHub
+                </button>
+                <button class="social-btn" onclick="socialLogin('azure')" id="btn-microsoft">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.4 2H2v9.4h9.4V2zM22 2h-9.4v9.4H22V2zM11.4 12.6H2V22h9.4v-9.4zM22 12.6h-9.4V22H22v-9.4z" fill="#00A4EF"/></svg>
+                    Continue with Microsoft
+                </button>
+            </div>
+
+            <div class="divider-with-text">or sign up with email</div>
+
+            <form id="emailSignupForm" onsubmit="emailSignup(event)">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="8+ characters" minlength="8">
+                </div>
+                <button type="submit" class="submit-btn" id="btn-email-submit">Continue with Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ---------------------------------------------------------------
+        // Configuration — replace with actual API URL when deployed
+        // ---------------------------------------------------------------
+        const API_BASE = 'https://api.hsnexus.com'; // Cloud Run URL
+
+        // ---------------------------------------------------------------
+        // Auth Modal
+        // ---------------------------------------------------------------
+        function openAuthModal() {
+            document.getElementById('authModal').classList.add('active');
+        }
+
+        function closeAuthModal() {
+            document.getElementById('authModal').classList.remove('active');
+        }
+
+        // Close on overlay click
+        document.getElementById('authModal').addEventListener('click', function(e) {
+            if (e.target === this) closeAuthModal();
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeAuthModal();
+        });
+
+        // ---------------------------------------------------------------
+        // Social Login
+        // ---------------------------------------------------------------
+        async function socialLogin(provider) {
+            try {
+                // Redirect to our auth service which proxies to Supabase
+                window.location.href = `${API_BASE}/auth/login/${provider}`;
+            } catch (err) {
+                console.error('Social login error:', err);
+                alert('Login failed. Please try again.');
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // Create Stripe Checkout (shared helper)
+        // ---------------------------------------------------------------
+        async function redirectToCheckout(accessToken) {
+            const checkoutRes = await fetch(`${API_BASE}/subscribe/create-checkout`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${accessToken}`,
+                },
+                body: JSON.stringify({
+                    success_url: `${window.location.origin}/pricing/?status=pending&session_id={CHECKOUT_SESSION_ID}`,
+                    cancel_url: `${window.location.origin}/pricing/?status=cancelled`,
+                }),
+            });
+
+            if (!checkoutRes.ok) {
+                const err = await checkoutRes.json();
+                throw new Error(err.detail || 'Checkout creation failed');
+            }
+
+            const { checkout_url } = await checkoutRes.json();
+            window.location.href = checkout_url;
+        }
+
+        // ---------------------------------------------------------------
+        // Email Signup → Stripe Checkout
+        // ---------------------------------------------------------------
+        async function emailSignup(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const submitBtn = document.getElementById('btn-email-submit');
+
+            submitBtn.textContent = 'Creating account...';
+            submitBtn.disabled = true;
+
+            try {
+                // 1. Create account
+                const signupRes = await fetch(`${API_BASE}/auth/signup`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                if (!signupRes.ok) {
+                    const err = await signupRes.json();
+                    throw new Error(err.detail || 'Signup failed');
+                }
+
+                const { access_token } = await signupRes.json();
+
+                // Store token for later use
+                localStorage.setItem('sb_access_token', access_token);
+
+                // 2. Redirect to Stripe Checkout
+                submitBtn.textContent = 'Redirecting to payment...';
+                await redirectToCheckout(access_token);
+
+            } catch (err) {
+                console.error('Signup/checkout error:', err);
+                alert(err.message || 'Something went wrong. Please try again.');
+                submitBtn.textContent = 'Continue with Email';
+                submitBtn.disabled = false;
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // Handle OAuth social login return (?auth=complete)
+        // The /auth/callback page stores tokens in localStorage and
+        // redirects here with ?auth=complete. We pick them up and
+        // resume checkout.
+        // ---------------------------------------------------------------
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.get('auth') === 'complete') {
+            const storedToken = localStorage.getItem('sb_access_token');
+            if (storedToken) {
+                // Auto-redirect to Stripe Checkout
+                const header = document.querySelector('.page-header');
+                header.innerHTML = `
+                    <div class="badge">Authenticated</div>
+                    <h1>Redirecting to <span>payment…</span></h1>
+                    <p>You're signed in. Redirecting to Stripe Checkout now…</p>
+                `;
+                redirectToCheckout(storedToken).catch(function(err) {
+                    header.innerHTML = `
+                        <div class="badge" style="background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4); color: #ef4444;">Error</div>
+                        <h1>Something went <span>wrong.</span></h1>
+                        <p>${err.message || 'Could not create checkout session. Please try again.'}</p>
+                        <div style="margin-top: 24px;">
+                            <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Try Again</a>
+                        </div>
+                    `;
+                });
+            }
+        }
+
+        // ---------------------------------------------------------------
+        // Handle return from Stripe Checkout — VERIFY via API
+        //
+        // ?status=pending&session_id=cs_xxx → verify with authenticated
+        // /subscribe/checkout-status/{session_id} endpoint. Never trust the
+        // query string alone, and do not ignore the actual Checkout session.
+        // ---------------------------------------------------------------
+        const checkoutSessionId = urlParams.get('session_id');
+        if (urlParams.get('status') === 'pending' && checkoutSessionId) {
+            const header = document.querySelector('.page-header');
+            header.innerHTML = `
+                <div class="badge">Verifying</div>
+                <h1>Checking your <span>payment…</span></h1>
+                <p>Please wait while we verify your subscription status.</p>
+            `;
+
+            (async function verifyPayment() {
+                const token = localStorage.getItem('sb_access_token');
+                if (!token) {
+                    header.innerHTML = `
+                        <div class="badge" style="background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4); color: #ef4444;">Session Expired</div>
+                        <h1>Please <span>sign in</span> again.</h1>
+                        <p>We couldn't verify your payment because your session expired. Please sign in again to check your subscription status.</p>
+                        <div style="margin-top: 24px;">
+                            <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Back to Pricing</a>
+                        </div>
+                    `;
+                    return;
+                }
+
+                try {
+                    const wait = function(ms) {
+                        return new Promise(function(resolve) { setTimeout(resolve, ms); });
+                    };
+
+                    let data = null;
+                    for (let attempt = 0; attempt < 3; attempt++) {
+                        if (attempt > 0) {
+                            await wait(2000);
+                        } else {
+                            await wait(1000);
+                        }
+
+                        const statusRes = await fetch(`${API_BASE}/subscribe/checkout-status/${encodeURIComponent(checkoutSessionId)}`, {
+                            headers: { 'Authorization': `Bearer ${token}` },
+                        });
+
+                        if (!statusRes.ok) {
+                            const err = await statusRes.json().catch(function() { return {}; });
+                            throw new Error(err.detail || 'Could not verify checkout session');
+                        }
+
+                        data = await statusRes.json();
+                        if (data.activation_state !== 'processing') {
+                            break;
+                        }
+                    }
+
+                    if (data && data.activation_state === 'active') {
+                        header.innerHTML = `
+                            <div class="badge" style="background: rgba(34,197,94,0.2); border-color: rgba(34,197,94,0.4);">✓ Payment Confirmed</div>
+                            <h1>Welcome to <span>Tier1!</span></h1>
+                            <p>Your subscription is active. Open your VS Code extension or Workbench app — Tier1 will be activated automatically.</p>
+                            <div style="margin-top: 24px;">
+                                <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Back to Pricing</a>
+                            </div>
+                        `;
+                    } else if (data && (data.activation_state === 'processing' || data.activation_state === 'payment_pending')) {
+                        header.innerHTML = `
+                            <div class="badge">Processing</div>
+                            <h1>Payment <span>received.</span></h1>
+                            <p>Your checkout completed, but activation is still processing. It may take a few minutes for the subscription webhook to finish.</p>
+                            <div style="margin-top: 24px;">
+                                <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Back to Pricing</a>
+                            </div>
+                        `;
+                    } else {
+                        header.innerHTML = `
+                            <div class="badge" style="background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4); color: #ef4444;">Not Completed</div>
+                            <h1>Checkout is <span>not complete.</span></h1>
+                            <p>We could not confirm a completed paid checkout for this session. If you already paid, please wait a moment and try again.</p>
+                            <div style="margin-top: 24px;">
+                                <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Back to Pricing</a>
+                            </div>
+                        `;
+                    }
+                } catch (err) {
+                    header.innerHTML = `
+                        <div class="badge" style="background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4); color: #ef4444;">Verification Failed</div>
+                        <h1>Could not <span>verify.</span></h1>
+                        <p>We received your payment but couldn't verify the subscription status right now. Your extension will automatically detect the activation within a few minutes.</p>
+                        <div style="margin-top: 24px;">
+                            <a href="/pricing/" style="color: var(--accent-green); text-decoration: none; font-weight: 500;">← Back to Pricing</a>
+                        </div>
+                    `;
+                }
+            })();
+        }
+
+        // ---------------------------------------------------------------
+        // FAQ Toggle
+        // ---------------------------------------------------------------
+        function toggleFaq(button) {
+            const item = button.closest('.faq-item');
+            item.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

@@ -11,7 +11,7 @@
 
 ## 1. Acceptance of Terms
 
-By downloading, installing, activating, or using AI Smart Scaffold, the VS Code extension, or any associated CLI tooling (the "Software"), you ("User") agree to these Terms of Service ("Terms"). If you are accepting on behalf of a company or organization, you represent that you have authority to bind that entity, and "User" refers to that entity.
+By downloading, installing, activating, or using AI Smart Scaffold, the VS Code extension, any associated CLI tooling, or other connected local product surfaces made available in this release line (the "Software"), you ("User") agree to these Terms of Service ("Terms"). If you are accepting on behalf of a company or organization, you represent that you have authority to bind that entity, and "User" refers to that entity.
 
 If you do not agree to these Terms, do not install or use the Software.
 
