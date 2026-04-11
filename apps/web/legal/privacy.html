@@ -3,389 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <title>Privacy Policy — AI Smart Scaffold | H&S Nexus Ventures</title>
-    <meta name="description" content="Privacy Policy for AI Smart Scaffold by H&S Nexus Ventures. Learn how we handle your data with our governed AI development tool.">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0f172a">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.hsnexus.com/legal/privacy">
-    <meta property="og:title" content="Privacy Policy — AI Smart Scaffold">
-    <meta property="og:description" content="How AI Smart Scaffold handles your data. Local-first, privacy-respecting governed AI development.">
-    <meta property="og:site_name" content="H&S Nexus Ventures">
-
-    <!-- Fonts -->
+    <title>Privacy Policy — AI Smart Scaffold</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="3;url=https://www.hsnexus.com/legal#privacy">
+    <link rel="canonical" href="https://www.hsnexus.com/legal">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --bg-primary: #0a0e1a;
-            --bg-card: #111827;
-            --accent-green: #22c55e;
-            --accent-gradient: linear-gradient(135deg, #22c55e, #06b6d4);
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-            --border: #1e293b;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0a0e1a;
+            color: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             min-height: 100vh;
-            overflow-x: hidden;
-            line-height: 1.7;
-        }
-
-        .bg-grid {
-            position: fixed;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
-            background-size: 60px 60px;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .bg-glow {
-            position: fixed;
-            top: -200px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 800px;
-            height: 600px;
-            background: radial-gradient(ellipse, rgba(34, 197, 94, 0.08), transparent 70%);
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .page-container {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 24px 80px;
-        }
-
-        /* Header */
-        .page-header {
+            padding: 24px;
             text-align: center;
-            margin-bottom: 48px;
         }
-
+        .box { max-width: 480px; }
         .badge {
             display: inline-block;
-            padding: 6px 16px;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.2);
+            padding: 4px 14px;
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.2);
             border-radius: 999px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--accent-green);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 24px;
-        }
-
-        .page-header h1 {
-            font-size: clamp(1.8rem, 4vw, 2.8rem);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, #f1f5f9, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .page-header p {
-            font-size: 1rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .meta-info {
-            margin-top: 12px;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        /* Content */
-        .legal-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 20px;
-            transition: border-color 0.3s;
-        }
-
-        .legal-section:hover {
-            border-color: rgba(34, 197, 94, 0.2);
-        }
-
-        .legal-section h2 {
-            font-size: 1.15rem;
+            font-size: 0.75rem;
             font-weight: 700;
-            color: var(--accent-green);
-            margin-bottom: 16px;
+            color: #22c55e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 20px;
         }
-
-        .legal-section p {
-            color: var(--text-secondary);
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .legal-section p:last-child {
-            margin-bottom: 0;
-        }
-
-        .legal-section ul {
-            padding-left: 20px;
-            margin-bottom: 12px;
-        }
-
-        .legal-section li {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 8px;
-        }
-
-        .legal-section table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 12px 0;
+        h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+        p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+        .link-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #22c55e;
+            color: #0a0e1a;
+            border-radius: 10px;
+            font-weight: 700;
             font-size: 0.9rem;
-        }
-
-        .legal-section th {
-            text-align: left;
-            padding: 10px 12px;
-            background: rgba(34, 197, 94, 0.06);
-            border-bottom: 1px solid var(--border);
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .legal-section td {
-            padding: 10px 12px;
-            border-bottom: 1px solid var(--border);
-            color: var(--text-secondary);
-        }
-
-        .legal-section strong {
-            color: var(--text-primary);
-        }
-
-        /* Highlight box */
-        .highlight-box {
-            background: rgba(34, 197, 94, 0.05);
-            border: 1px solid rgba(34, 197, 94, 0.15);
-            border-radius: 12px;
-            padding: 16px 20px;
-            margin: 16px 0;
-        }
-
-        .highlight-box p {
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-
-        /* Footer */
-        .legal-footer {
-            text-align: center;
-            margin-top: 48px;
-            padding-top: 32px;
-            border-top: 1px solid var(--border);
-        }
-
-        .legal-footer p {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .legal-footer a {
-            color: var(--accent-green);
             text-decoration: none;
+            transition: background 0.2s;
         }
-
-        .legal-footer a:hover { text-decoration: underline; }
-
-        a { color: var(--accent-green); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(16px); }
-            to { opacity: 1; transform: translateY(0); }
+        .link-btn:hover { background: #16a34a; }
+        .note { margin-top: 16px; font-size: 0.78rem; color: #64748b; }
+        .progress {
+            width: 100%;
+            height: 3px;
+            background: rgba(34,197,94,0.1);
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 28px;
         }
-        .animate-in {
-            animation: fadeInUp 0.5s ease forwards;
-            opacity: 0;
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #22c55e;
+            border-radius: 999px;
+            animation: fill 3s linear forwards;
         }
-        .delay-1 { animation-delay: 0.05s; }
-        .delay-2 { animation-delay: 0.1s; }
-        .delay-3 { animation-delay: 0.15s; }
-        .delay-4 { animation-delay: 0.2s; }
-        .delay-5 { animation-delay: 0.25s; }
-        .delay-6 { animation-delay: 0.3s; }
-        .delay-7 { animation-delay: 0.35s; }
-        .delay-8 { animation-delay: 0.4s; }
-        .delay-9 { animation-delay: 0.45s; }
-        .delay-10 { animation-delay: 0.5s; }
-        .delay-11 { animation-delay: 0.55s; }
-        .delay-12 { animation-delay: 0.6s; }
-
-        @media (max-width: 640px) {
-            .legal-section { padding: 24px 20px; }
-        }
+        @keyframes fill { to { width: 100%; } }
     </style>
 </head>
 <body>
-    <div class="bg-grid"></div>
-    <div class="bg-glow"></div>
-
-    <div class="page-container">
-
-        <header class="page-header animate-in">
-            <div class="badge">Legal</div>
-            <h1>Privacy Policy</h1>
-            <p>How AI Smart Scaffold handles your data — local-first, privacy-respecting governed AI development.</p>
-            <div class="meta-info">Version 1.0 · Last updated April 1, 2026 · H&S Nexus Ventures</div>
-        </header>
-
-        <div class="legal-section animate-in delay-1">
-            <h2>1. Who We Are</h2>
-            <p>H&S Nexus Ventures ("HSNV", "we", "us", "our") develops and distributes AI Smart Scaffold, a governed runtime for AI-assisted software development, released first as a VS Code extension with associated local runtime components while connected product surfaces roll out in stages.</p>
-            <p>Contact: <a href="mailto:inquiry@hsnexus.com">inquiry@hsnexus.com</a></p>
-        </div>
-
-        <div class="legal-section animate-in delay-2">
-            <h2>2. Scope</h2>
-            <p>This Privacy Policy applies to:</p>
-            <ul>
-                <li>The AI Smart Scaffold VS Code extension</li>
-                <li>The AI Smart Scaffold CLI (<code>python -m gov</code>)</li>
-                <li>Any connected local AI Smart Scaffold product surfaces made available in this release line, including the Workbench desktop application where provided</li>
-                <li>Any optional HSNV-operated services you explicitly connect to through the Software (e.g., subscription or license APIs)</li>
-            </ul>
-            <div class="highlight-box">
-                <p>This Policy does <strong>not</strong> apply to your own project workspace files. Those remain entirely on your machine and are not subject to this Policy.</p>
-            </div>
-            <p>To keep Workbench and the VS Code extension aligned, the Software may store machine-local runtime state such as notification history, alert resolutions, timestamps, entitlement status, and workspace health markers on your device. That local state remains on your machine unless you deliberately include it in a diagnostic bundle or use an optional HSNV service.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-3">
-            <h2>3. Data We Collect</h2>
-            <p><strong>Data You Provide</strong> — When you purchase a subscription: name, email address, payment information (processed by our payment provider, not stored by HSNV), and license key details. When contacting support: content you choose to include in your request.</p>
-            <p><strong>Optional Diagnostic Bundles</strong> — If you use the <em>SEND BUGS / FEEDBACK</em> feature, you may choose to submit a locally generated diagnostics bundle to HSNV over HTTPS. The bundle is generated on your machine for review before you confirm upload. Include only what is needed for troubleshooting. HSNV uses this material only for troubleshooting and analysis, and targets deletion once the support issue is resolved.</p>
-            <p><strong>Automatically Collected</strong> — The Software operates primarily locally. The current runtime does not require telemetry to function. If optional telemetry is introduced, it is limited to anonymized feature activation events, error codes, extension version, and session counts.</p>
-            <div class="highlight-box">
-                <p><strong>We do not collect:</strong> Your source code, project files, file contents, commit messages, repository names, AI prompts, or model responses.</p>
-            </div>
-            <p><strong>License Validation</strong> — If you use hosted license validation: license key hash (one-way), machine fingerprint hash, and subscription status are exchanged. No workspace content is transmitted. Validation requests are logged for up to 90 days.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-4">
-            <h2>4. How We Use Your Data</h2>
-            <table>
-                <thead>
-                    <tr><th>Purpose</th><th>Legal Basis</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Deliver the Software and subscription benefits</td><td>Contract performance</td></tr>
-                    <tr><td>Process payments and manage license keys</td><td>Contract performance</td></tr>
-                    <tr><td>Improve reliability via anonymized telemetry</td><td>Legitimate interest / Consent</td></tr>
-                    <tr><td>Respond to support requests</td><td>Legitimate interest</td></tr>
-                    <tr><td>Prevent fraud and unauthorized use</td><td>Legitimate interest</td></tr>
-                    <tr><td>Comply with legal obligations</td><td>Legal obligation</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="legal-section animate-in delay-5">
-            <h2>5. Data Sharing</h2>
-            <p>HSNV does not sell your personal data. We share data only with:</p>
-            <ul>
-                <li><strong>Payment processors</strong> (e.g., Lemon Squeezy, our active Merchant of Record), where subscriptions are offered. Their own privacy terms apply.</li>
-                <li><strong>Infrastructure providers</strong>, where HSNV-hosted services are used. Data is processed under data processing agreements.</li>
-                <li><strong>Legal authorities</strong> — when required by applicable law, court order, or to protect the rights and safety of HSNV, users, or the public.</li>
-            </ul>
-        </div>
-
-        <div class="legal-section animate-in delay-6">
-            <h2>6. Data Retention</h2>
-            <table>
-                <thead>
-                    <tr><th>Data Type</th><th>Retention</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Account and license data</td><td>Subscription duration + 3 years</td></tr>
-                    <tr><td>Support correspondence</td><td>2 years from last contact</td></tr>
-                    <tr><td>Optional diagnostic bundles you submit</td><td>Targeted deletion within 30 days after the support issue is resolved, unless required longer for security or legal purposes</td></tr>
-                    <tr><td>Anonymized telemetry</td><td>Raw: 12 months; aggregated: indefinite</td></tr>
-                    <tr><td>License validation logs</td><td>90 days</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="legal-section animate-in delay-7">
-            <h2>7. Your Rights</h2>
-            <p><strong>GDPR (EU/EEA):</strong> Access, rectification, erasure, portability, restriction, objection, withdraw consent.</p>
-            <p><strong>Philippine DPA (RA 10173):</strong> Right to be informed, access, correct, erasure/blocking, damages, and complaint to the NPC.</p>
-            <p><strong>CCPA (California, USA):</strong> Right to know, delete, opt out of sale, and non-discrimination.</p>
-            <p>To exercise any right, contact <a href="mailto:inquiry@hsnexus.com">inquiry@hsnexus.com</a>. We respond within 30 days.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-8">
-            <h2>8. Telemetry Controls</h2>
-            <p>The current runtime does not require telemetry. If enabled, the product provides controls for enabling, disabling, or configuring it. In jurisdictions requiring prior consent (e.g., EU), telemetry is <strong>off by default</strong>.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-9">
-            <h2>9. Security</h2>
-            <ul>
-                <li>License key hashes stored using one-way SHA-256</li>
-                <li>Machine fingerprint data hashed before transmission</li>
-                <li>All communications use TLS 1.2 or higher</li>
-                <li>Scaffold content IP encrypted with AES-256-GCM at rest</li>
-            </ul>
-        </div>
-
-        <div class="legal-section animate-in delay-10">
-            <h2>10. Children's Privacy</h2>
-            <p>AI Smart Scaffold is a developer tool intended for professional and adult use. HSNV does not knowingly collect personal data from individuals under 18.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-11">
-            <h2>11. International Data Transfers</h2>
-            <p>HSNV is based in the Philippines. For EU/EEA users, transfers are conducted under GDPR Standard Contractual Clauses or other appropriate safeguards.</p>
-        </div>
-
-        <div class="legal-section animate-in delay-12">
-            <h2>12. Changes to This Policy</h2>
-            <p>HSNV may update this Privacy Policy when practices change. For material changes, we provide at least 14 days' notice via in-product notification or email.</p>
-        </div>
-
-        <footer class="legal-footer">
-            <p>© 2026 H&S Nexus Ventures. All rights reserved.</p>
-            <p style="margin-top: 8px;">
-                <a href="/legal/terms">Terms of Service</a> ·
-                <a href="/pricing">Pricing</a> ·
-                <a href="mailto:inquiry@hsnexus.com">Contact</a>
-            </p>
-        </footer>
-    </div>
+<div class="box">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>
+        The Privacy Policy for AI Smart Scaffold is now published on the
+        <strong style="color: #f1f5f9;">H&amp;S Nexus website</strong> — the unified legal home
+        for all H&amp;S Nexus products and brands. It covers all data collected
+        by the software, including license validation and optional diagnostics.
+    </p>
+    <a href="https://www.hsnexus.com/legal#privacy" class="link-btn">View Privacy Policy →</a>
+    <p class="note">Redirecting automatically in 3 seconds…</p>
+    <div class="progress"><div class="progress-bar"></div></div>
+</div>
+<script>
+    setTimeout(() => {
+        window.location.href = 'https://www.hsnexus.com/legal#privacy';
+    }, 3000);
+</script>
 </body>
 </html>

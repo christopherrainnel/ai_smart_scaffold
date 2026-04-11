@@ -2,9 +2,23 @@
 
 > Launch note: The VS Code extension is the first shipped surface. Early users who begin on or before **June 30, 2026** enter **Tier1** during the initial entitlement sync in the same workspace and can remain there for up to **20 days**, with all bundled introductory access ending no later than **June 30, 2026**.
 
-For product questions, installation issues, or support requests:
+For product questions, installation issues, subscription management, or support requests:
 
 - Email: `inquiry@hsnexus.com`
+
+## Account and Subscription Management
+
+**AI Smart Scaffold uses your H&S Nexus account** — the same account covers all current
+and future H&S Nexus digital products.
+
+- **Subscribe or upgrade**: Open AI Smart Scaffold and click the tier badge or upgrade prompt,
+  or visit [hsnexus.com/subscribe/ai-smart-scaffold](https://www.hsnexus.com/subscribe/ai-smart-scaffold) directly.
+- **Sign in within the app**: Use your H&S Nexus email, Google, or GitHub account.
+- **Manage your subscription**: Visit [hsnexus.com/account](https://www.hsnexus.com/account) to view
+  active subscriptions, billing history, and license status.
+- **Cancel anytime**: Through your account dashboard or by emailing inquiry@hsnexus.com.
+
+**Payment methods accepted:** PayMongo (GCash, Maya, card — Philippines) and PayPal (international).
 
 Recommended first references:
 
@@ -13,7 +27,7 @@ Recommended first references:
 - `docs/manuals/installation.md`
 - `docs/manuals/system-requirements.md`
 - `docs/manuals/supported-tools.md`
-- [Current pricing](https://www.hsnexus.com/pricing)
+- [Current pricing](https://www.hsnexus.com/subscribe/ai-smart-scaffold)
 
 ## Runtime Protection and Capacity
 
@@ -52,3 +66,9 @@ A: AI Smart Scaffold raises a repo-scoped notice instead of pinning that obligat
 
 **Q: Can I still edit my own markdown docs?**
 A: Yes. Your project-authored markdowns remain yours to edit in the same workspace. AI Smart Scaffold surfaces follow-up when managed areas or repo structure need review, but it does not require you to move into a second working folder just to keep writing docs.
+
+**Q: What account do I use to log in to the app?**
+A: Your H&S Nexus account — the same one you use on hsnexus.com. Sign up or sign in at [hsnexus.com/auth](https://www.hsnexus.com/auth) or directly from the in-app upgrade prompt.
+
+**Q: Where do I manage billing and cancel my subscription?**
+A: Visit [hsnexus.com/account](https://www.hsnexus.com/account) to view subscriptions, billing history, and license status. You can cancel anytime from there with no lock-in.
