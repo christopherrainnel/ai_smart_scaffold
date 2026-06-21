@@ -52,4 +52,4 @@ The official product must enforce these limits server-side per user account acro
 
 ## Repository Name Note
 
-This repository may still appear under the historical GitHub slug `ai_smart_scaffold` until the owner renames it. The public product name is **AI Smart Governance**.
+This repository was previously published under the historical GitHub slug `ai_smart_scaffold`. The public product and repository name are now **AI Smart Governance**.
