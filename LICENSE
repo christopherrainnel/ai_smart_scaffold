@@ -4,9 +4,16 @@ Copyright (c) 2026 Health & Smart Nexus Ventures. All rights reserved.
 
 SPDX-License-Identifier: LicenseRef-HSNV-Proprietary
 
-This software and all associated files are proprietary and confidential.
-Unauthorized copying, distribution, modification, or use of this software,
-via any medium, is strictly prohibited without the express written permission
-of the copyright owner.
+This repository is public for AI Smart Governance documentation, support,
+updates, and issue intake. Public visibility does not grant an open-source
+license to the software, private governance brain, runtime implementation,
+extension/workbench source, backend services, entitlement logic, trademarks,
+or other proprietary materials.
 
-For full license terms, see: docs/legal/terms-of-service.md
+No permission is granted to copy, modify, distribute, sublicense, sell, reverse
+engineer, or create derivative works from proprietary product materials except
+where H&S Nexus Ventures provides explicit written permission or a separate
+license for a specific file.
+
+For product terms, privacy, and security reporting guidance, use the public
+notices in docs/legal/ and the official H&S Nexus website.

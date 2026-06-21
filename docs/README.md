@@ -1,23 +1,14 @@
-# Documentation
+# AI Smart Governance Public Docs
 
-`docs/` is one of the five foundational folders in the standard AI Smart Scaffold project layout. It centralizes user guidance, technical references, and release-facing documentation.
+This directory contains public-facing documentation for AI Smart Governance.
 
-## User Guides
+## Current Docs
 
-- `manuals/main-instructions.md`
-- `manuals/installation.md`
-- `manuals/system-requirements.md`
-- `manuals/supported-tools.md`
+- [Account and Tiers](account-and-tiers.md)
+- [Product Forms](product-forms.md)
+- [Public Roadmap](public-roadmap.md)
+- [Security Policy](legal/security.md)
 
-## Product Information
+## Boundary
 
-- `story/behind-ai-smart-scaffold.md`
-- `release-notes/0.1.0.md`
-- `release-notes/assets-0.1.0.md`
-
-## Legal
-
-- `legal/privacy-policy.md`
-- `legal/terms-of-service.md`
-- `legal/security.md`
-- `legal/third-party-notices.md`
+The public docs can explain how the product works, what users should expect, and how to ask for help. They must not expose private implementation details for the governance brain, entitlement enforcement, payment handling, backend services, extension internals, or workbench internals.

@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea for AI Smart Scaffold
+about: Suggest an idea for AI Smart Governance
 title: ''
 labels: enhancement
 assignees: ''
@@ -14,4 +14,4 @@ A clear and concise description of what you want to happen.
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
-*Note: This repo only tracks public release requests. If accepted, the work will occur in the internal builder repository.*
+*Note: This repo only tracks public product requests. If accepted, implementation work occurs in the private product repository.*

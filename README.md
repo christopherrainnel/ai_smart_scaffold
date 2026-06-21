@@ -1,94 +1,55 @@
-# AI Smart Scaffold
+# AI Smart Governance
 
-> Launch note: The VS Code extension ships first in this public release. The Workbench desktop app and broader runtime surfaces follow after the VS Code rollout.
+AI Smart Governance is an account-required governance layer for AI-assisted software development. It helps teams keep AI agents, chat boxes, editor extensions, and repositories aligned so work stays reviewable, recoverable, and safer to finish.
 
-AI Smart Scaffold is a local-first governed runtime for AI-assisted software development. It acts like an orchestrator between you, your AI tools, and your repository so work is less likely to drift across chats, files, and half-finished handoffs. Planning, execution, verification, and runtime state stay reviewable, recoverable, and easier to finish over time.
+This repository is the public documentation, support, update, and issue-intake surface for the product. It is not the private runtime source repository.
 
----
+## Product Truth
 
-## 0.1.0 Public Release
+- Product name: **AI Smart Governance**
+- Operator: **H&S Nexus Ventures**
+- Website: [hsnexus.com](https://www.hsnexus.com)
+- Main product forms: official VS Code extension, plugin/workbench surfaces, CLI/MCP runtime integrations, and hosted account/entitlement services
+- Official governance requires sign-in with an H&S Nexus account
+- The main governance brain, runtime implementation, entitlement enforcement, backend code, and packaged product builds remain private unless the owners later approve a narrower safe-code release
 
-Version `0.1.0` is the first public release line.
+## Current Public Repo Boundary
 
-For early users who begin on or before **June 30, 2026**, the product enters bundled **Tier1** mode during the initial entitlement sync in the same workspace and can remain there for up to **20 days** on that machine, with all bundled introductory access ending no later than **June 30, 2026**. After that introductory Tier1 window ends, the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+This repo is for:
 
-This means early users enter the Tier1 workflow in the same project without creating a second working folder.
+- Product updates and public release notes
+- Installation and usage guidance when the official product is available
+- Public support, feature requests, and bug reports
+- Security reporting instructions
+- Commercial and account-tier explanations
 
-Runtime protection stays machine-aware across tiers. AI Smart Scaffold works from a **3-session active baseline** and can temporarily lift the soft ceiling to **4** when the machine has healthy headroom. Separate context budgets help prevent prompt flooding and overloaded long sessions; they are runtime safety controls, not a paid usage meter.
+This repo is not for:
 
-Free is not a soft unlimited mode. It includes a bounded Tier1-preview budget:
+- Releasing the private governance brain
+- Publishing extension, workbench, CLI, MCP, or backend source code
+- Publishing entitlement, quota, payment, or license-enforcement internals
+- Accepting code contributions that attempt to replace the official product
 
-- up to **5 premium prompts** per rolling 24-hour window
-- up to **8 premium entitlement events** per rolling 24-hour window
-- optional **20-minute AI-work duration** cap where telemetry is available
-- optional **15-minute first-to-second premium-tool gap** fallback where telemetry is not available
+Selected compatibility layers, schemas, examples, or policy formats may be opened later for inspection if the owners decide they are safe to publish. There is no promise or schedule for that. Monetization and user trust both matter, so public code release decisions will stay deliberate.
 
-On the first cap hit, runtime behavior falls back to the Free-preview state while keeping machine safety protections and the current workspace active.
+## Tiers
 
----
+| Tier | Price | Account requirement | Daily repo scope | Governed sessions / agents |
+| --- | ---: | --- | --- | --- |
+| Free | $0/month | Required | First 2 governed repos per account per day | Up to 2 concurrent governed sessions/agents |
+| Tier1 | $3/month | Required | Unlimited official-use repo scope | Unlimited official-use governed sessions/agents, subject to safety and abuse controls |
 
-## What It Does
+The official product must enforce these limits server-side per user account across devices. Local files or client settings are not the source of truth for commercial access.
 
-- **AI orchestration that reduces drift** by keeping planning, execution, verification, and tool activity from quietly wandering apart
-- **Structured task lifecycle** so important steps are less likely to disappear when the project gets busy
-- **Practical scaffold foundation** for governed work in the same repository you already use
-- **Multi-session continuity** with state, recovery support, and better visibility when work stretches across chats
-- **Shared notification history across connected product surfaces** so guided actions do not disappear after a single toast
-- **Repo change awareness outside the active session** so important created, moved, or deleted files are surfaced as repo notices instead of being pinned to the wrong chat
-- **Safer governed-file refreshes** so same-name managed files are less likely to collide with your existing work
-- **Tier1 guided workflow support** that gives subscribers deeper help finishing the project when AI output starts to sprawl or stall
-- **VS Code extension**, **Workbench desktop app**, and the **governed runtime** working as one product line
-- **Local-first support flow** that lets you review a diagnostics bundle before you decide to send it
+## Start Here
 
----
+- [Account and Tiers](docs/account-and-tiers.md)
+- [Product Forms](docs/product-forms.md)
+- [Public Roadmap](docs/public-roadmap.md)
+- [Support](SUPPORT.md)
+- [Security](SECURITY.md)
+- [Changelog](CHANGELOG.md)
 
-## Foundational Project Structure
+## Repository Name Note
 
-AI Smart Scaffold uses the five folders most software teams already recognize as a practical baseline:
-
-| Folder | Purpose |
-| --- | --- |
-| `src/` | Functional application logic |
-| `tests/` | Validation and regression coverage |
-| `docs/` | Technical notes, user guidance, and architecture decisions |
-| `scripts/` | Build, setup, and automation helpers |
-| `config/` | Centralized project settings and policy |
-
----
-
-## Product Forms
-
-AI Smart Scaffold is available as:
-
-1. **VS Code extension**
-2. **Governed runtime**
-3. **Workbench desktop app**
-
-These forms work together, but the **VS Code extension is the first shipped surface** in this release sequence and your project remains in the same workspace.
-
----
-
-## Local-First Operation
-
-- HSNV ships the scaffold and runtime, not your repository-specific work
-- Project files, prompts, and outputs stay local unless you deliberately share support material
-- Your own project markdowns and docs stay editable in the same workspace. When the runtime needs follow-up on managed areas or repo structure, it surfaces reviewable notices instead of silently assuming intent.
-- If you send troubleshooting material, keep it minimal and relevant
-- Guardrails materially reduce risk, but unexpected AI behavior can still occur and should be reviewed
-
----
-
-## Getting Started
-
-- `docs/manuals/main-instructions.md`
-- `docs/manuals/installation.md`
-- `docs/manuals/system-requirements.md`
-- `docs/manuals/supported-tools.md`
-
----
-
-## Release and Legal
-
-- `CHANGELOG.md` and `docs/release-notes/`
-- `LICENSE`, `SECURITY.md`, `SUPPORT.md`
-- `docs/legal/`
+This repository may still appear under the historical GitHub slug `ai_smart_scaffold` until the owner renames it. The public product name is **AI Smart Governance**.

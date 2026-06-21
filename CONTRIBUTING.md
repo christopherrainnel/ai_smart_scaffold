@@ -1,17 +1,22 @@
-# Contributing to AI Smart Scaffold
+# Contributing To AI Smart Governance Public Docs
 
-> Public launch note: The VS Code extension ships first. Early users who begin on or before **June 30, 2026** start in **Tier1** mode for up to **20 days**, with all bundled introductory access ending no later than **June 30, 2026**, before the product returns to the Free baseline unless a separate paid Tier1 entitlement is active.
+Thank you for helping improve AI Smart Governance.
 
-Thank you for your interest! **Please note: This is a public release-facing repository.**
+This is a public release-facing repository. The private governance brain, official extension/workbench code, CLI/MCP runtime implementation, backend entitlement enforcement, and billing logic are developed in an internal builder repository.
 
-The core runtime, extension, and desktop applications are actively developed in a separate, internal ("builder") repository. 
+## Contributions We Can Review Here
 
-**What we accept here:**
 - Documentation fixes
-- Clarifications to public manuals or landing page copy
-- Issue reports for bugs or feature requests
+- Clarifications to public setup or support guidance
+- Public bug reports that do not contain secrets or private project data
+- Feature requests and product feedback
+- Repro steps for visible product behavior
 
-**What we do not accept here:**
-- Code contributions attempting to rewrite the core runtime, hook mechanics, or extension logic (those don't live here).
+## Contributions We Do Not Accept Here
 
-For issues reported here, our core team will reproduce them and apply fixes in the upstream build repository. The fixed binaries will then be published back to this repository during the next release.
+- Runtime, extension, workbench, backend, quota, payment, or license-enforcement code
+- Attempts to bypass account-required access or commercial limits
+- Pull requests that recreate the private governance brain
+- Security vulnerability details in public issues or pull requests
+
+Accepted product changes are implemented in the internal builder repository and published through official product releases.
